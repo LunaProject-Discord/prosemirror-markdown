@@ -199,7 +199,7 @@ export class MarkdownSerializerState {
   }
 
   /// @internal
-  flushClose(size: number = 2) {
+  flushClose(size: number = 1) {
     if (this.closed) {
       if (!this.atBlank()) this.out += "\n"
       if (size > 1) {
