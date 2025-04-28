@@ -1,6 +1,6 @@
 {
   "name": "@lunaproject/prosemirror-markdown",
-  "version": "1.13.4",
+  "version": "1.0.0",
   "description": "ProseMirror Markdown integration",
   "type": "module",
   "main": "dist/index.cjs",
