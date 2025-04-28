@@ -150,7 +150,7 @@ export const defaultMarkdownSerializer = new MarkdownSerializer({
          escape: false}
 })
 
-function backticksFor(node: Node, side: number) {
+export function backticksFor(node: Node, side: number) {
   let ticks = /`+/g, m, len = 0
   if (node.isText) while (m = ticks.exec(node.text!)) len = Math.max(len, m[0].length)
   let result = len > 0 && side > 0 ? " `" : "`"
@@ -159,7 +159,7 @@ function backticksFor(node: Node, side: number) {
   return result
 }
 
-function isPlainURL(link: Mark, parent: Node, index: number) {
+export function isPlainURL(link: Mark, parent: Node, index: number) {
   if (link.attrs.title || !/^\w+:/.test(link.attrs.href)) return false
   let content = parent.child(index)
   if (!content.isText || content.text != link.attrs.href || content.marks[content.marks.length - 1] != link) return false
