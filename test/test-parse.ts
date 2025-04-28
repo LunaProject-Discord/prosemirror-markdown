@@ -2,7 +2,7 @@ import {eq} from "prosemirror-test-builder"
 import {Node} from "prosemirror-model"
 import ist from "ist"
 
-import {schema, defaultMarkdownParser, defaultMarkdownSerializer, MarkdownSerializer} from "prosemirror-markdown"
+import {schema, defaultMarkdownParser, defaultMarkdownSerializer, MarkdownSerializer} from "@lunaproject/prosemirror-markdown"
 
 import {doc, blockquote, h1, h2, p, hr, li, ol, ol3, ul, pre, em, strong, code, a, link, br, img} from "./build.js"
 

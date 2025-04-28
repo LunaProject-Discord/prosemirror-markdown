@@ -1,5 +1,5 @@
 import {builders, NodeBuilder, MarkBuilder} from "prosemirror-test-builder"
-import {schema} from "prosemirror-markdown"
+import {schema} from "@lunaproject/prosemirror-markdown"
 
 const b = builders(schema, {
   p: {nodeType: "paragraph"},

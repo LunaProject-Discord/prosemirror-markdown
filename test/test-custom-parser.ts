@@ -3,7 +3,7 @@ import ist from "ist"
 // @ts-ignore
 import markdownit from "markdown-it"
 import {Node} from "prosemirror-model"
-import {schema, MarkdownParser} from "prosemirror-markdown"
+import {schema, MarkdownParser} from "@lunaproject/prosemirror-markdown"
 
 import {doc, p, br} from "./build.js"
 
